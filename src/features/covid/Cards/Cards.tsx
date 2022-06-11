@@ -16,15 +16,17 @@ const Cards: React.FC = () => {
   return (
     <div className={styles.container}>
       <Grid container spacing={1} justify="center">
-        <Grid
-          item
-          xs={12}
-          md={3}
-          component={Card}
-          className={styles.infected}
-        >
-
-          
+        <Grid item xs={12} md={3} component={Card} className={styles.infected}>
+          <CardContent>
+            <Typography variant="h5">
+              <CountUp
+                start={0}
+                end={daily[daily.length - 1].Confirmed}
+                duration={1.5}
+                separator=","
+              />
+            </Typography>
+          </CardContent>
         </Grid>
       </Grid>
     </div>
