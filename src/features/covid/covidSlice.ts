@@ -2,9 +2,10 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { RootState } from "../../app/store";
 import dataDaily from "./apiDataDaily.json";
-
 const apiUrl = "https://api.covid19api.com/total/country";
+
 type DATADAILY = typeof dataDaily;
+
 type covidState = {
   daily: DATADAILY;
   country: string;
