@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import { AppBar, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import styles from "./DashBoard.module.css";
 
+import { useSelector } from "react-redux";
+
 import { useAppDispatch } from "../../../app/hooks";
-import { fetchAsyncGetDaily } from "../covidSlice";
+import { selectDaily, fetchAsyncGetDaily } from "../covidSlice";
 
 import PieChart from "../PieChart/PieChart";
 
