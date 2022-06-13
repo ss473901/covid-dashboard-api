@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./Cards.module.css";
+import styles from "./Chart.module.css";
 import { Line } from "react-chartjs-2";
 
 import { useSelector } from "react-redux";
 import { selectDaily } from "../covidSlice";
-import { findAllByAltText } from "@testing-library/react";
 
 const Chart: React.FC = () => {
   const daily = useSelector(selectDaily);

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Cards.module.css";
-import CountUp from "react-countup/build/CountUp";
+import CountUp from "react-countup";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 
 import { GiHastyGrave } from "react-icons/gi";
